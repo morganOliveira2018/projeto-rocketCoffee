@@ -1,0 +1,88 @@
+:root {
+    --background: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+body, h1, h2, a {
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    color: var(--text-color);
+}
+
+body {
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    background: var(--background);
+    background-image: url(assets/blur-1.png), url(assets/blur-2.png);
+    background-position: bottom left, top right;
+    background-repeat: no-repeat, no-repeat;
+}
+
+#headerContainer {
+    height: 5rem;
+}
+
+.headerContent {
+    max-width: 1120px;
+    height: 5rem; 
+    margin: 2rem auto;
+    display: flex;
+    align-items: center; 
+}
+
+nav {
+    width: auto;
+    margin-left: 7rem;
+}
+
+a { 
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 4rem;
+}
+
+.btn-getCoffe {
+    color: var(--text-color);
+    padding: 11px 43px;
+    border: 1px solid var(--button);
+    border-radius: 0.4rem;
+    background: transparent;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.menu-navigation {
+    display: flex;
+}
+
+h1, h2 {
+    font-size: 7rem;
+}
+
+h1 {
+    margin-top: 1rem;
+    color: var(--text-color);
+}
+
+h2 {
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    color: var(--background);
+}
+
+h2::before {
+    content: "<";
+}
+
+h2::after {
+    content: "/>";
+}
+
+image {
+    width: 100%;
+}
